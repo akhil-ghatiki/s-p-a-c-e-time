@@ -33,5 +33,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-to-json": "^3.5.0"
+  },
+  "jest": {
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
