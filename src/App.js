@@ -1,30 +1,56 @@
-import React from 'react';
-import logo from './spacetime.svg';
+import React, {Component} from 'react';
+import {withStyles} from '@material-ui/core/styles';
 import './App.css';
+import termsFrPath from './Keepwaiting.md';
+import Grid from '@material-ui/core/Grid';
+import ReactMarkdown from 'react-markdown'
+import Paper from '@material-ui/core/Paper';
 
-function App() {
-  return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+const useStyles = (theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+});
 
-          <p>
-            Keep waiting on this.A little wiser ! A little older, but you will be happy to see this soon !
-            <br></br>
-            <p>Do not go gentle into that good night,<br></br>
-              Old age should burn and rave at close of day;<br></br>
-              Rage, rage against the dying of the light.<br></br><br></br>
-              Though wise men at their end know dark is right,<br></br>
-              Because their words had forked no lightning they<br></br>
-              Do not go gentle into that good night.<br></br><br></br>
-              Rage, rage against the dying of the light.<br></br>
-              (poem by Dylan Thomas)
-            </p>
-            -- 	&nbsp; s  	&nbsp;  	&nbsp; p   	&nbsp; 	&nbsp; a  	&nbsp;  	&nbsp;c  	&nbsp; e 	&nbsp; t 	&nbsp; i 	&nbsp;me
-          </p>
-        </header>
-      </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {terms: null}
+  }
+
+  componentWillMount() {
+    fetch(termsFrPath).then((response) => response.text()).then((text) => {
+      this.setState({terms: text})
+    })
+  }
+
+  render() {
+    const {classes} = this.props;
+    return (
+        <div>
+          <img src={'./spacetimeRect.svg'} className={'image'}></img>
+          <Grid container justify="center">
+            <Grid item xs={12} sm={2}>
+              <Paper className={classes.paper}>test1</Paper>
+            </Grid>
+            <Grid item xs={12} sm={8}>
+              <Paper className={classes.paper}>
+                <ReactMarkdown source={this.state.terms}></ReactMarkdown>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} sm={2}>
+              <Paper className={classes.paper}>test3</Paper>
+            </Grid>
+          </Grid>
+        </div>
+    );
+  }
 }
 
-export default App;
+export default withStyles(useStyles)(App);
