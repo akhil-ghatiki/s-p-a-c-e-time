@@ -24,7 +24,11 @@ Object {
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
           >
-            <div />
+            <div>
+              <div
+                class="App-markdownText-4"
+              />
+            </div>
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
@@ -55,7 +59,11 @@ Object {
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
         >
-          <div />
+          <div>
+            <div
+              class="App-markdownText-4"
+            />
+          </div>
         </div>
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"

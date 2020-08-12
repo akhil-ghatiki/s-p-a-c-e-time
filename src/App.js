@@ -15,6 +15,9 @@ const useStyles = (theme) => ({
   control: {
     padding: theme.spacing(2),
   },
+  markdownText: {
+    margin: 30
+  }
 });
 
 class App extends Component {
@@ -40,7 +43,7 @@ class App extends Component {
             </Grid>
             <Grid item xs={12} sm={8}>
               <div>
-                <ReactMarkdown
+                <ReactMarkdown className={classes.markdownText}
                     source={this.state.markDownContent}></ReactMarkdown>
               </div>
             </Grid>
