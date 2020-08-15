@@ -4,6 +4,7 @@ import './App.css';
 import markDownFilePath from './Keepwaiting.md';
 import Grid from '@material-ui/core/Grid';
 import ReactMarkdown from 'react-markdown'
+import PrimaryAppBar2 from "./components/PrimaryAppBar";
 
 const useStyles = (theme) => ({
   root: {
@@ -36,6 +37,7 @@ class App extends Component {
     const {classes} = this.props;
     return (
         <div className={'App'}>
+          <PrimaryAppBar2></PrimaryAppBar2>
           <img src={'./spacetimeRect.svg'} alt={"poster"} className={'image'}></img>
           <Grid container justify="center" className={classes.root}>
             <Grid item xs={12} sm={2}>

@@ -8,6 +8,100 @@ Object {
       <div
         class="App"
       >
+        <div
+          class="makeStyles-grow-5"
+        >
+          <header
+            class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+            style="box-shadow: none; margin-bottom: 30px;"
+          >
+            <div
+              class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+            >
+              <div
+                class="makeStyles-grow-5"
+              />
+              <div
+                class="makeStyles-sectionDesktop-9"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  style="margin-right: 90px;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Categories
+                    </p>
+                  </span>
+                </button>
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  style="margin-right: 90px;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Tags
+                    </p>
+                  </span>
+                </button>
+                <button
+                  aria-controls="primary-search-account-menu"
+                  aria-haspopup="true"
+                  aria-label="account of current user"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  edge="end"
+                  style="margin-right: 90px;"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Contact
+                    </p>
+                  </span>
+                </button>
+              </div>
+              <div
+                class="makeStyles-sectionMobile-10"
+              >
+                <button
+                  aria-controls="primary-search-account-menu-mobile"
+                  aria-haspopup="true"
+                  aria-label="show more"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      |||
+                    </p>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </header>
+        </div>
         <img
           alt="poster"
           class="image"
@@ -38,11 +132,169 @@ Object {
         </div>
       </div>
     </div>
+    <div
+      aria-hidden="true"
+      class="MuiPopover-root"
+      id="primary-search-account-menu-mobile"
+      role="presentation"
+      style="position: fixed; z-index: 1300; right: 0px; bottom: 0px; top: 0px; left: 0px; visibility: hidden;"
+    >
+      <div
+        data-test="sentinelStart"
+        tabindex="0"
+      />
+      <div
+        class="MuiPaper-root MuiMenu-paper MuiPopover-paper MuiPaper-elevation8 MuiPaper-rounded"
+        style="opacity: 0; transform: scale(0.75, 0.5625); visibility: hidden;"
+        tabindex="-1"
+      >
+        <ul
+          class="MuiList-root MuiMenu-list MuiList-padding"
+          role="menu"
+          tabindex="-1"
+        >
+          <li
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            role="menuitem"
+            tabindex="0"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Categories
+            </p>
+          </li>
+          <li
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Tags
+            </p>
+          </li>
+          <li
+            aria-disabled="false"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1"
+            >
+              Contact
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-test="sentinelEnd"
+        tabindex="0"
+      />
+    </div>
   </body>,
   "container": <div>
     <div
       class="App"
     >
+      <div
+        class="makeStyles-grow-5"
+      >
+        <header
+          class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
+          style="box-shadow: none; margin-bottom: 30px;"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+          >
+            <div
+              class="makeStyles-grow-5"
+            />
+            <div
+              class="makeStyles-sectionDesktop-9"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                style="margin-right: 90px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1"
+                  >
+                    Categories
+                  </p>
+                </span>
+              </button>
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                style="margin-right: 90px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1"
+                  >
+                    Tags
+                  </p>
+                </span>
+              </button>
+              <button
+                aria-controls="primary-search-account-menu"
+                aria-haspopup="true"
+                aria-label="account of current user"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                edge="end"
+                style="margin-right: 90px;"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1"
+                  >
+                    Contact
+                  </p>
+                </span>
+              </button>
+            </div>
+            <div
+              class="makeStyles-sectionMobile-10"
+            >
+              <button
+                aria-controls="primary-search-account-menu-mobile"
+                aria-haspopup="true"
+                aria-label="show more"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1"
+                  >
+                    |||
+                  </p>
+                </span>
+              </button>
+            </div>
+          </div>
+        </header>
+      </div>
       <img
         alt="poster"
         class="image"
