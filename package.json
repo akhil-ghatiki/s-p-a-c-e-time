@@ -35,11 +35,15 @@
     ]
   },
   "devDependencies": {
+    "axios": "^0.19.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.3",
-    "enzyme-to-json": "^3.5.0"
+    "enzyme-to-json": "^3.5.0",
+    "react-axios": "^2.0.3"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

@@ -9,7 +9,7 @@ Object {
         class="App"
       >
         <div
-          class="makeStyles-grow-5"
+          class="makeStyles-grow-6"
         >
           <header
             class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
@@ -19,13 +19,13 @@ Object {
               class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
             >
               <div
-                class="makeStyles-grow-5"
+                class="makeStyles-grow-6"
               />
               <div
-                class="makeStyles-sectionDesktop-9"
+                class="makeStyles-sectionDesktop-10"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                   style="margin-right: 90px;"
                   tabindex="0"
                   type="button"
@@ -41,7 +41,7 @@ Object {
                   </span>
                 </button>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                   style="margin-right: 90px;"
                   tabindex="0"
                   type="button"
@@ -60,7 +60,7 @@ Object {
                   aria-controls="primary-search-account-menu"
                   aria-haspopup="true"
                   aria-label="account of current user"
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                   edge="end"
                   style="margin-right: 90px;"
                   tabindex="0"
@@ -78,13 +78,13 @@ Object {
                 </button>
               </div>
               <div
-                class="makeStyles-sectionMobile-10"
+                class="makeStyles-sectionMobile-11"
               >
                 <button
                   aria-controls="primary-search-account-menu-mobile"
                   aria-haspopup="true"
                   aria-label="show more"
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                   tabindex="0"
                   type="button"
                 >
@@ -123,6 +123,23 @@ Object {
                 class="App-markdownText-4"
               />
             </div>
+            <p>
+              Try adding a comment in 
+              <span>
+                <a
+                  href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
+                  target="_blank"
+                >
+                  this issue
+                </a>
+              </span>
+               and it should show up in the comments below
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6"
+            >
+              Comments:
+            </h6>
           </div>
           <div
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
@@ -155,7 +172,7 @@ Object {
         >
           <li
             aria-disabled="false"
-            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-12 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
             role="menuitem"
             tabindex="0"
           >
@@ -167,7 +184,7 @@ Object {
           </li>
           <li
             aria-disabled="false"
-            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-12 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
             role="menuitem"
             tabindex="-1"
           >
@@ -179,7 +196,7 @@ Object {
           </li>
           <li
             aria-disabled="false"
-            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-11 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
+            class="MuiButtonBase-root MuiListItem-root MuiMenuItem-root makeStyles-buttons-12 MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button"
             role="menuitem"
             tabindex="-1"
           >
@@ -202,7 +219,7 @@ Object {
       class="App"
     >
       <div
-        class="makeStyles-grow-5"
+        class="makeStyles-grow-6"
       >
         <header
           class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorTransparent MuiPaper-elevation4"
@@ -212,13 +229,13 @@ Object {
             class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
           >
             <div
-              class="makeStyles-grow-5"
+              class="makeStyles-grow-6"
             />
             <div
-              class="makeStyles-sectionDesktop-9"
+              class="makeStyles-sectionDesktop-10"
             >
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                 style="margin-right: 90px;"
                 tabindex="0"
                 type="button"
@@ -234,7 +251,7 @@ Object {
                 </span>
               </button>
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                 style="margin-right: 90px;"
                 tabindex="0"
                 type="button"
@@ -253,7 +270,7 @@ Object {
                 aria-controls="primary-search-account-menu"
                 aria-haspopup="true"
                 aria-label="account of current user"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                 edge="end"
                 style="margin-right: 90px;"
                 tabindex="0"
@@ -271,13 +288,13 @@ Object {
               </button>
             </div>
             <div
-              class="makeStyles-sectionMobile-10"
+              class="makeStyles-sectionMobile-11"
             >
               <button
                 aria-controls="primary-search-account-menu-mobile"
                 aria-haspopup="true"
                 aria-label="show more"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-11 MuiButton-colorInherit"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-buttons-12 MuiButton-colorInherit"
                 tabindex="0"
                 type="button"
               >
@@ -316,6 +333,23 @@ Object {
               class="App-markdownText-4"
             />
           </div>
+          <p>
+            Try adding a comment in 
+            <span>
+              <a
+                href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
+                target="_blank"
+              >
+                this issue
+              </a>
+            </span>
+             and it should show up in the comments below
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6"
+          >
+            Comments:
+          </h6>
         </div>
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
