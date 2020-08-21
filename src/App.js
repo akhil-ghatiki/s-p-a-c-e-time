@@ -46,7 +46,8 @@ class App extends Component {
     Api.get('/issues/1/comments')
     .then((response) => {
       // console.log(response.data[0].body);
-      response.data.map(comment => this.state.comments.push(comment.body));
+      // response.data.map(comment => comment.body);
+      this.setState({comments: response.data.map(comment => comment.body)})
     });
   }
 
