@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {withStyles} from '@material-ui/core/styles';
+import React, { Component } from 'react';
+import { withStyles } from '@material-ui/core/styles';
 import './App.css';
 import markDownFilePath from './Keepwaiting.md';
 import Grid from '@material-ui/core/Grid';
@@ -24,64 +24,73 @@ const useStyles = (theme) => ({
   },
   link: {
     fontFamily: '-apple-system, BlinkMacSystemFont,'
-        + ' \'Segoe UI\', \'Roboto\', \'Oxygen\','
-        + ' \'Ubuntu\', \'Cantarell\', \'Fira Sans\', \'Droid Sans\','
-        + ' \'Helvetica Neue\', sans-serif',
+      + ' \'Segoe UI\', \'Roboto\', \'Oxygen\','
+      + ' \'Ubuntu\', \'Cantarell\', \'Fira Sans\', \'Droid Sans\','
+      + ' \'Helvetica Neue\', sans-serif',
   }
 });
 
 class App extends Component {
   constructor(props) {
     super(props)
-    this.state = {markDownContent: null, comment: "test", comments: []}
+    this.state = { markDownContent: null, commentsData: [] }
   }
 
   componentWillMount() {
     fetch(markDownFilePath).then((response) => response.text()).then((text) => {
-      this.setState({markDownContent: text})
+      this.setState({ markDownContent: text })
     })
   }
 
   componentDidMount() {
     Api.get('/issues/1/comments')
-    .then((response) => {
-      // console.log(response.data[0].body);
-      // response.data.map(comment => comment.body);
-      this.setState({comments: response.data.map(comment => comment.body)})
-    });
+      .then((response) => {
+        this.setState({ commentsData: response.data.map(comment => this.createCommentData(comment)) })
+      });
+  }
+
+  createCommentData(comment) {
+    let commentDetails = {};
+    commentDetails['comment'] = comment.body;
+    commentDetails['ImgSrc'] = comment.user.avatar_url;
+    commentDetails['commentUrl'] = comment.html_url;
+    commentDetails['id'] = comment.id;
+    commentDetails['userName'] = comment.user.login;
+    console.log("test:")
+    console.log(commentDetails);
+    return commentDetails;
   }
 
   render() {
-    const {classes} = this.props;
+    const { classes } = this.props;
     return (
-        <div className={'App'}>
-          <PrimaryAppBar2></PrimaryAppBar2>
-          <img src={'./spacetimeRect.svg'} alt={"poster"}
-               className={'image'}></img>
-          <Grid container justify="center" className={classes.root}>
-            <Grid item xs={12} sm={2}>
-              <div></div>
-            </Grid>
-            <Grid item xs={12} sm={8}>
-              <div>
-                <ReactMarkdown className={classes.markdownText}
-                               source={this.state.markDownContent}></ReactMarkdown>
-              </div>
-              <p>Try adding a comment in <span>
-                <a href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
-                   target="_blank">this issue</a></span> and it should show up
-                in the comments below</p>
-              <Typography variant={"h6"}>Comments:</Typography>
-              {this.state.comments.map(comment =>
-                  <Comments comment={comment}></Comments>
-              )}
-              {/*<Comments comment={this.state.comments[0]}></Comments>*/}
-            </Grid>
-            <Grid item xs={12} sm={2}>
-              <div></div>
-            </Grid>
+      <div className={'App'}>
+        <PrimaryAppBar2></PrimaryAppBar2>
+        <img src={'./spacetimeRect.svg'} alt={"poster"}
+          className={'image'}></img>
+        <Grid container justify="center" className={classes.root}>
+          <Grid item xs={12} sm={2}>
+            <div></div>
           </Grid>
-        </div>
+          <Grid item xs={12} sm={8}>
+            <div>
+              <ReactMarkdown className={classes.markdownText}
+                source={this.state.markDownContent}></ReactMarkdown>
+            </div>
+            <p>Try adding a comment in <span>
+              <a href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
+                target="_blank">this issue</a></span> and it should show up
+                in the comments below</p>
+            <Typography variant={"h6"}>Comments:</Typography>
+            {this.state.commentsData.map(comment =>
+              <Comments comment={comment}></Comments>
+            )}
+          </Grid>
+          <Grid item xs={12} sm={2}>
+            <div></div>
+          </Grid>
+        </Grid>
+      </div>
     );
   }
 }
