@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import expect from 'expect';
-import App from './App';
+import Comments from './Comments';
 import {configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -13,10 +13,10 @@ configure({adapter: new Adapter()});
 //   expect(textElement).toBeInTheDocument();
 // });
 
-describe('App', () => {
+describe('Comments', () => {
   it('should render correctly', () => {
-    const component = render(<App/>);
+    const comment = {};
+    const component = render(<Comments commentData={comment}/>);
     expect(component).toMatchSnapshot();
   });
-
 });

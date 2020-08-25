@@ -36,13 +36,18 @@ class App extends Component {
     this.state = { markDownContent: null, commentsData: [] }
   }
 
-  componentWillMount() {
+  componentDidMount() {
+    this.updateMarkdownState();
+    this.updateCommentsState();
+  }
+
+  updateMarkdownState() {
     fetch(markDownFilePath).then((response) => response.text()).then((text) => {
       this.setState({ markDownContent: text })
     })
   }
 
-  componentDidMount() {
+  updateCommentsState() {
     Api.get('/issues/1/comments')
       .then((response) => {
         this.setState({ commentsData: response.data.map(comment => this.createCommentData(comment)) })
@@ -80,11 +85,11 @@ class App extends Component {
             </div>
             <p>Try adding a comment in <span>
               <a href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
-                target="_blank">this issue</a></span> and it should show up
+                target="_blank" rel="noopener noreferrer">this issue</a></span> and it should show up
                 in the comments below</p>
             <Typography variant={"h6"}>Comments:</Typography>
-            {this.state.commentsData.map(comment =>
-              <Comments comment={comment}></Comments>
+            {this.state.commentsData.map(commentDataObject =>
+              <Comments commentData={commentDataObject}></Comments>
             )}
           </Grid>
           <Grid item xs={12} sm={2}>

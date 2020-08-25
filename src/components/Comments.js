@@ -17,6 +17,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 20,
   },
   lowText: {
+    display: 'inline',
+    marginRight: 20,
     color: '#808080'
   }
 }));
@@ -27,13 +29,13 @@ export default function Comments(props) {
     <div>
       <Box display="flex" flexDirection="row" p={1}>
         <Box p={1}>
-          <Avatar src={props.comment.ImgSrc}></Avatar>
+          <Avatar src={props.commentData.ImgSrc}></Avatar>
         </Box>
         <Box p={1}>
-          <Typography className={classes.inline}>{props.comment.userName}</Typography>
-          <Typography className={[classes.inline, classes.lowText]}>{props.comment.createdDateTime}</Typography>
-          <Link href={props.comment.commentUrl} color="inherit" className={[classes.inline, classes.lowText]}>#{props.comment.id}</Link>
-          <Typography className={classes.comment}>{props.comment.comment}</Typography>
+          <Typography className={classes.inline}>{props.commentData.userName}</Typography>
+          <Typography className={classes.lowText}>{props.commentData.createdDateTime}</Typography>
+          <Link target="_blank" rel="noopener noreferrer" href={props.commentData.commentUrl} color="inherit" className={classes.lowText}>#{props.commentData.id}</Link>
+          <Typography className={classes.comment}>{props.commentData.comment}</Typography>
         </Box>
       </Box>
     </div>
