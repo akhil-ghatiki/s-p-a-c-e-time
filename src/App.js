@@ -62,8 +62,6 @@ class App extends Component {
     commentDetails['id'] = comment.id;
     commentDetails['userName'] = comment.user.login;
     commentDetails['createdDateTime'] = comment.created_at;
-    console.log("test:")
-    console.log(commentDetails);
     return commentDetails;
   }
 
