@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import './App.css';
-import markDownFilePath from './Keepwaiting.md';
+import markDownFilePath from './posts/Keepwaiting.md';
 import Grid from '@material-ui/core/Grid';
 import ReactMarkdown from 'react-markdown'
 import PrimaryAppBar2 from "./components/PrimaryAppBar";
