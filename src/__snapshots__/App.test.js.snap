@@ -102,11 +102,6 @@ Object {
             </div>
           </header>
         </div>
-        <img
-          alt="poster"
-          class="image"
-          src="./spacetimeRect.svg"
-        />
         <div
           class="MuiGrid-root App-root-1 MuiGrid-container MuiGrid-justify-xs-center"
         >
@@ -119,9 +114,11 @@ Object {
             class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
           >
             <div>
-              <div
-                class="App-markdownText-4"
-              />
+              <div>
+                <div
+                  class="makeStyles-markdownText-14"
+                />
+              </div>
             </div>
             <p>
               Try adding a comment in 
@@ -313,11 +310,6 @@ Object {
           </div>
         </header>
       </div>
-      <img
-        alt="poster"
-        class="image"
-        src="./spacetimeRect.svg"
-      />
       <div
         class="MuiGrid-root App-root-1 MuiGrid-container MuiGrid-justify-xs-center"
       >
@@ -330,9 +322,11 @@ Object {
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
         >
           <div>
-            <div
-              class="App-markdownText-4"
-            />
+            <div>
+              <div
+                class="makeStyles-markdownText-14"
+              />
+            </div>
           </div>
           <p>
             Try adding a comment in 

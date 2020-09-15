@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import './App.css';
-import markDownFilePath from './posts/Keepwaiting.md';
+import contentFilePath from './posts/Keepwaiting.md';
 import Grid from '@material-ui/core/Grid';
-import ReactMarkdown from 'react-markdown'
 import PrimaryAppBar2 from "./components/PrimaryAppBar";
 import Comments from "./components/Comments";
 import Typography from '@material-ui/core/Typography';
 import Api from "./utils/Api";
+import MarkdownMembrane from "./components/MarkdownMembrane";
 
 const useStyles = (theme) => ({
   root: {
@@ -37,14 +37,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.updateMarkdownState();
     this.updateCommentsState();
-  }
-
-  updateMarkdownState() {
-    fetch(markDownFilePath).then((response) => response.text()).then((text) => {
-      this.setState({ markDownContent: text })
-    })
   }
 
   updateCommentsState() {
@@ -70,16 +63,14 @@ class App extends Component {
     return (
       <div className={'App'}>
         <PrimaryAppBar2></PrimaryAppBar2>
-        <img src={'./spacetimeRect.svg'} alt={"poster"}
-          className={'image'}></img>
         <Grid container justify="center" className={classes.root}>
           <Grid item xs={12} sm={2}>
             <div></div>
           </Grid>
           <Grid item xs={12} sm={8}>
             <div>
-              <ReactMarkdown className={classes.markdownText}
-                source={this.state.markDownContent}></ReactMarkdown>
+              <MarkdownMembrane markDownFilePath={contentFilePath}>
+              </MarkdownMembrane>
             </div>
             <p>Try adding a comment in <span>
               <a href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
