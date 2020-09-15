@@ -11,6 +11,6 @@ Because their words had forked no lightning they
 Do not go gentle into that good night.  
 Rage, rage against the dying of the light.
 
-(poem by Dyaln Thomas)
+(poem by Dylan Thomas)
 
                   -- s   p    a   c  e  t i me 
