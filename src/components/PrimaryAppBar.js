@@ -104,7 +104,7 @@ export default function PrimaryAppBar() {
       <MuiThemeProvider theme={theme}>
         <div className={classes.grow}>
           <AppBar position="static" color={'transparent'}
-                  style={{boxShadow: 'none', marginBottom: 30}}>
+                  style={{boxShadow: 'none'}}>
             <Toolbar>
               <div className={classes.grow}/>
               <div className={classes.sectionDesktop}>

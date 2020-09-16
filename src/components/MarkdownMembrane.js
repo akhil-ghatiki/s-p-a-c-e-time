@@ -7,7 +7,9 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     markdownText: {
-        padding: 30
+        paddingLeft: 30,
+        paddingRight: 30,
+        paddingBottom: 30
     }
 }));
 
@@ -38,9 +40,6 @@ export default function MarkdownMembrane(props) {
         return width && width > 25 ? width - 25 : width;
     };
     
-
-  
-
     const [input, setInput] = useState('');
     useEffect(() => {
         fetch(props.markDownFilePath).then((response) => response.text()).then((text) => {
