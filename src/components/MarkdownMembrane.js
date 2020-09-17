@@ -37,7 +37,7 @@ export default function MarkdownMembrane(props) {
             };
         }, [myRef, getWidth]);
     
-        return width && width > 25 ? width - 25 : width;
+        return width && width > 50 ? width - 50 : width;
     };
     
     const [input, setInput] = useState('');

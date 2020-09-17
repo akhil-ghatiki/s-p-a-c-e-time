@@ -13,13 +13,16 @@ const useStyles = makeStyles((theme) => ({
       + ' \'Helvetica Neue\', sans-serif',
   },
   inline: {
+    flexGrow: 1,
     display: 'inline',
-    marginRight: 20,
+    marginRight: 10,
   },
   lowText: {
+    flexGrow: 1,
     display: 'inline',
-    marginRight: 20,
-    color: '#808080'
+    marginRight: 10,
+    color: '#808080',
+    fontSize: 12
   }
 }));
 
