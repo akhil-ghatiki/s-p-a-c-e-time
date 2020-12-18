@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Comments(props) {
   const classes = useStyles();
+  if(props.gitIssue !== undefined){
   return (
     <div>
       <Box display="flex" flexDirection="row" p={1}>
@@ -43,4 +44,7 @@ export default function Comments(props) {
       </Box>
     </div>
   );
+  }
+  else
+  return(<div></div>);
 }

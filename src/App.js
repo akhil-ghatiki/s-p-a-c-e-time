@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import './App.css';
-import contentFilePath from './posts/Keepwaiting.md';
 import Grid from '@material-ui/core/Grid';
 import PrimaryAppBar2 from "./components/PrimaryAppBar";
 import Comments from "./components/Comments";
@@ -40,6 +39,10 @@ class App extends Component {
     this.updateCommentsState();
   }
 
+  static getDerivedStateFromProps(){
+    
+  }
+
   updateCommentsState() {
     Api.get('/issues/1/comments')
       .then((response) => {
@@ -60,6 +63,8 @@ class App extends Component {
 
   render() {
     const { classes } = this.props;
+    const gitIssueBaseUrl = "https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/";
+    const gitIssueUrl = gitIssueBaseUrl.concat(this.props.gitIssue);
     return (
       <div className={'App'}>
         <PrimaryAppBar2></PrimaryAppBar2>
@@ -69,16 +74,16 @@ class App extends Component {
           </Grid>
           <Grid item xs={12} sm={8}>
             <div>
-              <MarkdownMembrane markDownFilePath={contentFilePath}>
+              <MarkdownMembrane markDownFilePath={this.props.contentFilePath}>
               </MarkdownMembrane>
             </div>
             <p>Try adding a comment in <span>
-              <a href="https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/1"
+              <a href={gitIssueUrl}
                 target="_blank" rel="noopener noreferrer">this issue</a></span> and it should show up
                 in the comments below</p>
             <Typography variant={"h6"}>Comments:</Typography>
             {this.state.commentsData.map(commentDataObject =>
-              <Comments commentData={commentDataObject}></Comments>
+              <Comments commentData={commentDataObject} gitIssue={this.props.gitIssue}></Comments>
             )}
           </Grid>
           <Grid item xs={12} sm={2}>
