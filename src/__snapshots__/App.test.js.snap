@@ -106,21 +106,25 @@ Object {
           class="MuiGrid-root App-root-1 MuiGrid-container MuiGrid-justify-xs-center"
         >
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
           >
             <div />
           </div>
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-5"
           >
             <div>
-              <div>
+              <div
+                class="markdown-body"
+              >
                 <div
                   class="makeStyles-markdownText-14"
                 />
               </div>
             </div>
-            <p>
+            <p
+              class="App-commentHeader-4"
+            >
               Try adding a comment in 
               <span>
                 <a
@@ -134,13 +138,13 @@ Object {
                and it should show up in the comments below
             </p>
             <h6
-              class="MuiTypography-root MuiTypography-h6"
+              class="MuiTypography-root App-commentHeader-4 MuiTypography-h6"
             >
               Comments:
             </h6>
           </div>
           <div
-            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
           >
             <div />
           </div>
@@ -314,21 +318,25 @@ Object {
         class="MuiGrid-root App-root-1 MuiGrid-container MuiGrid-justify-xs-center"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
         >
           <div />
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-5"
         >
           <div>
-            <div>
+            <div
+              class="markdown-body"
+            >
               <div
                 class="makeStyles-markdownText-14"
               />
             </div>
           </div>
-          <p>
+          <p
+            class="App-commentHeader-4"
+          >
             Try adding a comment in 
             <span>
               <a
@@ -342,13 +350,13 @@ Object {
              and it should show up in the comments below
           </p>
           <h6
-            class="MuiTypography-root MuiTypography-h6"
+            class="MuiTypography-root App-commentHeader-4 MuiTypography-h6"
           >
             Comments:
           </h6>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-2"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
         >
           <div />
         </div>

@@ -7,12 +7,14 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   comment: {
+    color: '#505050',
     fontFamily: '-apple-system, BlinkMacSystemFont,'
       + ' \'Segoe UI\', \'Roboto\', \'Oxygen\','
       + ' \'Ubuntu\', \'Cantarell\', \'Fira Sans\', \'Droid Sans\','
       + ' \'Helvetica Neue\', sans-serif',
   },
   inline: {
+    color: '#204060',
     flexGrow: 1,
     display: 'inline',
     marginRight: 10,
@@ -36,7 +38,7 @@ export default function Comments(props) {
           <Avatar src={props.commentData.ImgSrc}></Avatar>
         </Box>
         <Box p={1}>
-          <Typography className={classes.inline}>{props.commentData.userName}</Typography>
+          <Typography className={classes.inline}>{props.commentData.userName}</Typography><br/>
           <Typography className={classes.lowText}>{props.commentData.createdDateTime}</Typography>
           <Link target="_blank" rel="noopener noreferrer" href={props.commentData.commentUrl} color="inherit" className={classes.lowText}>#{props.commentData.id}</Link>
           <Typography className={classes.comment}>{props.commentData.comment}</Typography>

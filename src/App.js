@@ -18,8 +18,8 @@ const useStyles = (theme) => ({
   control: {
     padding: theme.spacing(2),
   },
-  markdownText: {
-    margin: 30
+  commentHeader: {
+    margin: 15
   },
   link: {
     fontFamily: '-apple-system, BlinkMacSystemFont,'
@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   static getDerivedStateFromProps(){
-    
+
   }
 
   updateCommentsState() {
@@ -69,24 +69,24 @@ class App extends Component {
       <div className={'App'}>
         <PrimaryAppBar2></PrimaryAppBar2>
         <Grid container justify="center" className={classes.root}>
-          <Grid item xs={12} sm={2}>
+          <Grid item xs={12} sm={3.5}>
             <div></div>
           </Grid>
-          <Grid item xs={12} sm={8}>
+          <Grid item xs={12} sm={5}>
             <div>
               <MarkdownMembrane markDownFilePath={this.props.contentFilePath}>
               </MarkdownMembrane>
             </div>
-            <p>Try adding a comment in <span>
+            <p className={classes.commentHeader}>Try adding a comment in <span>
               <a href={gitIssueUrl}
                 target="_blank" rel="noopener noreferrer">this issue</a></span> and it should show up
                 in the comments below</p>
-            <Typography variant={"h6"}>Comments:</Typography>
+            <Typography className={classes.commentHeader} variant={"h6"}>Comments:</Typography>
             {this.state.commentsData.map(commentDataObject =>
               <Comments commentData={commentDataObject} gitIssue={this.props.gitIssue}></Comments>
             )}
           </Grid>
-          <Grid item xs={12} sm={2}>
+          <Grid item xs={12} sm={3.5}>
             <div></div>
           </Grid>
         </Grid>
