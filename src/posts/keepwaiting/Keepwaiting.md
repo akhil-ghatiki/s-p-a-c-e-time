@@ -1,5 +1,5 @@
 
-![image](interstellar-tesseract.jpg)
+![image](/images/keepwaiting/interstellar-tesseract.jpg)
 # Keep waiting on this. A little wiser ! A little older !  You will be happy to see this soon.
 Do not go gentle into that good night,  
 Old age should burn and rave at close of day;

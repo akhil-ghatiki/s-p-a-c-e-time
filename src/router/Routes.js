@@ -8,8 +8,8 @@ import Home from '../Home'
 
 export const RoutesList = {
     HOME: '/',
-    KEEP_WAITING: '/keepwaiting',
-    SILK_DESTINY_1 : '/silk_which_lost_its_destiny_1'
+    KEEP_WAITING: '/keep-waiting',
+    SILK_DESTINY_1 : '/silk-destiny-1'
 }
 
 export default function AppRouter() {

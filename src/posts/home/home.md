@@ -1,4 +1,4 @@
 > ~cd $HOME 
 
-![image](./calvinhobbesvegan.png)  
-https://akhil-ghatiki.github.io/keepwaiting
+![image](/images/home/calvinhobbesvegan.png)  
+https://akhil-ghatiki.github.io/#/keep-waiting

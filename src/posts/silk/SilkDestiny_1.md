@@ -1,4 +1,4 @@
-![image](four-friends-1.jpg)
+![image](/images/silk/four-friends-1.jpg)
 
 # A “silk” which lost its destiny.
 
