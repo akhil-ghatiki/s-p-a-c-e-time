@@ -14,3 +14,5 @@ Rage, rage against the dying of the light.
 (poem by Dylan Thomas)
 
         -- s   p    a   c  e  t i me 
+
+##### Continue reading: *[Part-1](https://akhil-ghatiki.github.io/#/silk-destiny-1)*

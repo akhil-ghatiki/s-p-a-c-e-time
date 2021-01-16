@@ -1,8 +1,9 @@
-![image](/images/silk/four-friends-1.jpg)
+![image](/images/silk/silk-destiny-1.jpg)
 
-# A “silk” which lost its destiny.
+# A “silk” which lost its destiny - Part - 1
 
-## Hufffff!!!!! Monday again :
+
+### *Huf !! Monday again :*
 
 It was a routine Monday morning.Every Monday I enter the office, 
 I feel like a Zombie whose brain is being controlled by an alien like in Men In Black. 
@@ -42,3 +43,7 @@ You just throw a name to his sense, he brings you all the details about that nam
 “No bro! the second I saw her I got your name to my mind”, said Rohit.
 
 We continued our talks about the politics, economy, tech etc and walked back to our work stations.
+
+##### Continue reading: *[Part-2](https://akhil-ghatiki.github.io/#/silk-destiny-2)*
+
+> ######  *Note: All the names, characters, places, events, locales, and incidents are either the products of the my imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.*
