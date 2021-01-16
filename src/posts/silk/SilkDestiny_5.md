@@ -47,8 +47,7 @@ I got my answer. Then I realized, it makes sense. Her facebook profile name had 
 
 The next day we went for a team outing.
 
-Three friends
-Image source
+![image](/images/silk/silk-destiny-5.jpg)
 
 I just removed her out of my mind. I was quite angry at this matter.
 

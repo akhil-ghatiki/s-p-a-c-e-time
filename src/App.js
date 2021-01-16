@@ -7,7 +7,6 @@ import Comments from "./components/Comments";
 import Typography from '@material-ui/core/Typography';
 import Api from "./utils/Api";
 import MarkdownMembrane from "./components/MarkdownMembrane";
-import keepWaiting from './posts/keepwaiting/Keepwaiting.md';
 
 const useStyles = (theme) => ({
   root: {
@@ -45,7 +44,14 @@ class App extends Component {
   }
 
   updateCommentsState() {
-    Api.get('/issues/1/comments')
+    // //Api.get('/issues/1/comments')
+    // let commentUrl = null;
+    // if (this.props.contentFilePath.includes("Keepwaiting")) {
+    //   commentUrl = "https://api.github.com/repos/akhil-ghatiki/akhil-ghatiki.github.io/issues/1/comments";
+    // } else {
+    //   commentUrl = "https://api.github.com/repos/akhil-ghatiki/ghpages-blog-comments/issues/1/comments";
+    // }
+    Api.get(this.getCommentApiUrl())
     .then((response) => {
       this.setState({
         commentsData: response.data.map(
@@ -68,11 +74,10 @@ class App extends Component {
   render() {
     const {classes} = this.props;
     const gitIssueBaseUrl_keepWaiting = "https://github.com/akhil-ghatiki/akhil-ghatiki.github.io/issues/";
-    const gitIssueBaseUrl = "https://github.com/akhil-ghatiki/ghpages-blog-comments/issues";
-    // const gitIssueUrl = gitIssueBaseUrl.concat(this.props.gitIssue);
-    const gitIssueUrl = (this.props.contentFilePath.includes("keep-waiting"))
-        ? gitIssueBaseUrl_keepWaiting.concat(this.props.gitIssue) : gitIssueBaseUrl.concat(
-            this.props.gitIssue);
+    const gitIssueBaseUrl = "https://github.com/akhil-ghatiki/ghpages-blog-comments/issues/";
+    let contentFilePath = this.props.contentFilePath;
+    const gitIssueUrl = this.getGitIssueUrl(contentFilePath,
+        gitIssueBaseUrl_keepWaiting, gitIssueBaseUrl);
     return (
         <div className={'App'}>
           <PrimaryAppBar2></PrimaryAppBar2>
@@ -105,6 +110,22 @@ class App extends Component {
           </Grid>
         </div>
     );
+  }
+
+  getGitIssueUrl(contentFilePath, gitIssueBaseUrl_keepWaiting,
+      gitIssueBaseUrl) {
+    if (contentFilePath.includes("Keepwaiting")) {
+      return gitIssueBaseUrl_keepWaiting.concat(this.props.gitIssue);
+    } else {
+      return gitIssueBaseUrl.concat(this.props.gitIssue);
+    }
+  }
+  getCommentApiUrl() {
+    if (this.props.contentFilePath.includes("Keepwaiting")) {
+      return "https://api.github.com/repos/akhil-ghatiki/akhil-ghatiki.github.io/issues/"+this.props.gitIssue+"/comments";
+    } else {
+      return "https://api.github.com/repos/akhil-ghatiki/ghpages-blog-comments/issues/"+this.props.gitIssue+"/comments";
+    }
   }
 }
 

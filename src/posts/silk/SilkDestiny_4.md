@@ -22,7 +22,7 @@ We had our casual talks and headed back to our work stations. We got immersed in
 
 “Lets wait, let’s wait for a couple of minutes”, I said as if we were discussing a defense secret of the country. Rohit was speech less for a moment. We was surprised to see me doing all this because he knew I never cared about girls ever. As soon as she crossed our workstation bay, we stood so casually that we knew nothing. We took out bags and started to move out for lunch right behind the friends group of this lady. Manohar and Vasi are very smart, they easily sensed what was happening in just a fraction of a second and joined us casually. We moved out to the elevators and we stood there waiting.
 
-firstTalkj
+![image](/images/silk/silk-destiny-4.png)
 
 Two elevators came simultaneously, all the friends of Pragathi got into one elevator. Rohit, Manohar and Vasi made their way into that elevator making it full and no more chance even for a single person. Yes, my great friends know the “bro code” very well and they maintained it.
 

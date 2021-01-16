@@ -17,19 +17,19 @@ After 20 min I felt I was the perfect time. I have chocolate in my bag, Rohit wa
 My heart beat started to rise high. Again, I can count on my pulses, accumulated all my courage, opened my skype window and started the chat.
 
                         Hi Pragathi
-Hi Anna
+    Hi Anna
                         Oh, please don’t call me anna
-Ha ha.…ok bro
+    Ha ha.…ok bro
                         Ohh !!! not again
-Ha ha ok..
+    Ha ha ok..
                         Are you free ?
-Yes. Why ?
-                        Can you just joing me for casual walk
+    Yes. Why ?
+                        Can you just join me for casual walk
                         down in the office premises?
-No sorry
+    No sorry
                         Ok. That is fine.
                         I am sorry if I annoyed you.
-ok
+    ok
 
 “What did you do? What just happened? This is not you”, said my inner voice angrily.
 
@@ -65,8 +65,7 @@ I replied with a coffee cup smiley to that message.
 
 “will see”, she replied.
 
-alone_man
-Image source
+![image](/images/silk/silk-destiny-6.jpg)
 
 I understood what she meant. That was a smart way of saying “NO”. I sent her a face book request after a week. After a few days I understood that my request was not just ignored but was deleted. After that I felt whether I have irritated her. I never messaged or tried to talk to her after that.
 The Regret:

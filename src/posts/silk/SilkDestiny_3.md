@@ -20,9 +20,7 @@ Rohit laughed like hell. “Bro!!! Is that you asking about a girl. What on eart
 
 “Bro. Leave it now. You don’t even have basic data to even start searching about her. Give me some time. Have trust for my data base.”, I realized how foolishly I wasted my time with sheer resources I had about her.
 
-office
-
-Image source
+![image](/images/silk/silk-destiny-3.jpg)
 
 I was desperate about this Monday. Going to office that Monday excited me so much that I just wanted nothing but going to office that day. I was on cloud nine. I moved on to my work station as soon as I walked into the office floor. Started my computer and started working on my code. I was unable to put my whole heart into my work. Then and while I was looking out of my work station on to the walk way expecting her any second. She did not turn up. Mean while I forgot about this and started concentrating on my work unknowingly.
 
