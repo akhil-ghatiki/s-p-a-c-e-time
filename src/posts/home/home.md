@@ -1,4 +1,9 @@
-> ~cd $HOME 
+### `~cd $HOME` 
 
-![image](/images/home/calvinhobbesvegan.png)  
-https://akhil-ghatiki.github.io/#/keep-waiting
+# Akhil Ghatiki 
+
+Help me to be awesome! Feedback, please? : `akhil.ghatiki+blog@gmail.com`
+
+[Twitter](https://twitter.com/akhilghatiki)
+
+[Github](https://github.com/akhil-ghatiki)

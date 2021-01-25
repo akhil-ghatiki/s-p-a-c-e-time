@@ -68,7 +68,8 @@ I replied with a coffee cup smiley to that message.
 ![image](/images/silk/silk-destiny-6.jpg)
 
 I understood what she meant. That was a smart way of saying “NO”. I sent her a face book request after a week. After a few days I understood that my request was not just ignored but was deleted. After that I felt whether I have irritated her. I never messaged or tried to talk to her after that.
-The Regret:
+
+### The Regret:
 
 I regret that I shouldn’t have talked to her in the first place. I should have kept calm. I should have not met her at all. I had many friends in her circle. I was capable of making into that circle and approach her as friend and put out my feelings. But I didn’t do that. Somehow, I felt that was wrong. What all I have is a deleted friend request and probably I made up a bad impression. She just turns her face when she encounters me which rarely happens like once in a blue moon.
 

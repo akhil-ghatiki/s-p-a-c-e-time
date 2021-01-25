@@ -94,9 +94,6 @@ export default function PrimaryAppBar() {
         <MenuItem className={classes.buttons}>
           <Typography>Tags</Typography>
         </MenuItem>
-        <MenuItem className={classes.buttons}>
-          <Typography>Contact</Typography>
-        </MenuItem>
       </Menu>
   );
 
@@ -109,14 +106,6 @@ export default function PrimaryAppBar() {
               <div className={classes.grow}/>
               <div className={classes.sectionDesktop}>
                 <Button className={classes.buttons} style={{marginRight: 90}}
-                        color="inherit">
-                  <Typography>Categories</Typography>
-                </Button>
-                <Button className={classes.buttons} style={{marginRight: 90}}
-                        color="inherit">
-                  <Typography>Tags</Typography>
-                </Button>
-                <Button className={classes.buttons} style={{marginRight: 90}}
                         edge="end"
                         aria-label="account of current user"
                         aria-controls={menuId}
@@ -124,7 +113,15 @@ export default function PrimaryAppBar() {
                         onClick={handleProfileMenuOpen}
                         color="inherit"
                 >
-                  <Typography>Contact</Typography>
+                  <Typography>/now</Typography>
+                </Button>
+                <Button className={classes.buttons} style={{marginRight: 90}}
+                        color="inherit">
+                  <Typography>Categories</Typography>
+                </Button>
+                <Button className={classes.buttons} style={{marginRight: 90}}
+                        color="inherit">
+                  <Typography>Tags</Typography>
                 </Button>
               </div>
               <div className={classes.sectionMobile}>
