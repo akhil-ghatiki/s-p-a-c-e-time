@@ -1,6 +1,7 @@
 ![image](/images/silk/silk-destiny-5.jpg)
 
 # A “silk” which lost its destiny - Part - 5
+###### *Aug 26, 2017*
 
 ### *The Silk:*
 All of us moved on to find a table. Finding a vacant table is quite a mess in the canteen during the peak hour of lunch time. We were quite lucky that day, we found a table as soon as we entered the canteen. I just bought curd rice and we were having our lunch. Soon I realized my hunger was vanished. I was not eating anything, I was just playing with the spoon like a kid who had a new toy in his hand.

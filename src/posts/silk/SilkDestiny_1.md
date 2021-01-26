@@ -1,7 +1,7 @@
 ![image](/images/silk/silk-destiny-1.jpg)
 
 # A “silk” which lost its destiny - Part - 1
-
+###### *Feb 09, 2017*
 
 ### *Huf !! Monday again :*
 

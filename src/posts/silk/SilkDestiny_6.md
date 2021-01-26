@@ -1,6 +1,7 @@
 ![image](/images/silk/silk-destiny-6.jpg)
 
 # A “silk” which lost its destiny - Part - 6
+###### *Jan 14, 2018*
 
 ### *The lost destiny:*
 

@@ -1,6 +1,7 @@
 ![image](/images/silk/silk-destiny-4.png)
 
 # A “silk” which lost its destiny - Part - 4
+###### *Jul 04, 2017*
 
 ### *The Five Seconds of Courage :*
 
