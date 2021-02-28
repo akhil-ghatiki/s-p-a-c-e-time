@@ -1,3 +1,9 @@
+### 2021
+
+ > ###### Feb 28
+ [Code smell Katas — Graceful exception handling](https://akhil-ghatiki.github.io/#/code-smell-katas-graceful-exception-handling)
+
+
 ### 2019
 
  > ###### May 15
