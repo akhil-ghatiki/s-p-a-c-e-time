@@ -13,6 +13,7 @@ import stolenFuture2 from '../posts/stolen-future/StolenFuture_2.md';
 import stolenFuture3 from '../posts/stolen-future/StolenFuture_3.md';
 import codeSmellKataGracefulExceptionHandling
   from '../posts/code-smell-katas/code_smell_katas_graceful_exception_handling.md';
+import distributedSystemsPeformanceTesting from '../posts/distributed-systems/performance_testing_distributed_system.md';
 import {HashRouter as Router} from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
@@ -30,7 +31,8 @@ export const RoutesList = {
   STOLEN_FUTURE_1: '/stolen-future-1',
   STOLEN_FUTURE_2: '/stolen-future-2',
   STOLEN_FUTURE_3: '/stolen-future-3',
-  CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING: '/code-smell-katas-graceful-exception-handling'
+  CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING: '/code-smell-katas-graceful-exception-handling',
+  DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
 }
 
 export default function AppRouter() {
@@ -110,6 +112,12 @@ export default function AppRouter() {
               render={() => <App key="codeSmellGracefulExceptionHandling"
                                  contentFilePath={codeSmellKataGracefulExceptionHandling}
                                  gitIssue={10}/>}/>
+
+          <Route
+              path={RoutesList.DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING}
+              render={() => <App key="distributedSystemPerformanceTesting"
+                                 contentFilePath={distributedSystemsPeformanceTesting}
+                                 gitIssue={11}/>}/>
 
         </Switch>
       </Router>

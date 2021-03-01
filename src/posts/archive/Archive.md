@@ -6,10 +6,13 @@
 
 ### 2019
 
+> ###### Jul 03
+ [Debugging the performance issue of a distributed system](https://akhil-ghatiki.github.io/#/debugging-performance-of-distributed-system)
+
  > ###### May 15
  [A stolen future – Part 3](https://akhil-ghatiki.github.io/#/stolen-future-3)
  
- > ###### Mar 6
+ > ###### Mar 06
  [A stolen future – Part 2](https://akhil-ghatiki.github.io/#/stolen-future-2)
  
  > ###### Feb 12
