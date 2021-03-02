@@ -2,6 +2,12 @@
 
  > ###### Feb 28
  [Code smell Katas — Graceful exception handling](https://akhil-ghatiki.github.io/#/code-smell-katas-graceful-exception-handling)
+ 
+
+### 2020
+
+ > ###### Jan 12
+ [Git hooks — The unsung rescuers](https://akhil-ghatiki.github.io/#/git-hooks-unsung-rescuers)
 
 
 ### 2019

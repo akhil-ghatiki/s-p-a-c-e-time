@@ -13,7 +13,8 @@ import stolenFuture2 from '../posts/stolen-future/StolenFuture_2.md';
 import stolenFuture3 from '../posts/stolen-future/StolenFuture_3.md';
 import codeSmellKataGracefulExceptionHandling
   from '../posts/code-smell-katas/code_smell_katas_graceful_exception_handling.md';
-import distributedSystemsPeformanceTesting from '../posts/distributed-systems/performance_testing_distributed_system.md';
+import distributedSystemsPerformanceTesting from '../posts/distributed-systems/performance_testing_distributed_system.md';
+import gitHooksUnsungRescuers from '../posts/git-hooks/git_hooks.md';
 import {HashRouter as Router} from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
@@ -33,6 +34,7 @@ export const RoutesList = {
   STOLEN_FUTURE_3: '/stolen-future-3',
   CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING: '/code-smell-katas-graceful-exception-handling',
   DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
+  GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers'
 }
 
 export default function AppRouter() {
@@ -116,8 +118,14 @@ export default function AppRouter() {
           <Route
               path={RoutesList.DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING}
               render={() => <App key="distributedSystemPerformanceTesting"
-                                 contentFilePath={distributedSystemsPeformanceTesting}
+                                 contentFilePath={distributedSystemsPerformanceTesting}
                                  gitIssue={11}/>}/>
+
+          <Route
+              path={RoutesList.GIT_HOOKS_UNSUNG_RESCUERS}
+              render={() => <App key="gitHooksUnsungRescuers"
+                                 contentFilePath={gitHooksUnsungRescuers}
+                                 gitIssue={12}/>}/>
 
         </Switch>
       </Router>
