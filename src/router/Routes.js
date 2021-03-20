@@ -1,5 +1,8 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
+import now from '../posts/app-menu/Now.md';
+import categories from '../posts/app-menu/Categories.md';
+import tags from '../posts/app-menu/Tags.md';
 import archive from '../posts/archive/Archive.md';
 import keepWaiting from '../posts/keepwaiting/Keepwaiting.md';
 import silkDestiny1 from '../posts/silk/SilkDestiny_1.md';
@@ -21,6 +24,9 @@ import Home from '../Home';
 
 export const RoutesList = {
   HOME: '/',
+  NOW: '/now',
+  CATEGORIES: '/categories',
+  TAGS: '/tags',
   ARCHIVE: '/archive',
   KEEP_WAITING: '/keep-waiting',
   SILK_DESTINY_1: '/silk-destiny-1',
@@ -48,6 +54,21 @@ export default function AppRouter() {
           <Route
               path={RoutesList.ARCHIVE}
               render={() => <App key="Archive" contentFilePath={archive}
+                                 gitIssue={1}/>}/>
+
+          <Route
+              path={RoutesList.NOW}
+              render={() => <App key="Now" contentFilePath={now}
+                                 gitIssue={1}/>}/>
+
+          <Route
+              path={RoutesList.CATEGORIES}
+              render={() => <App key="Categories" contentFilePath={categories}
+                                 gitIssue={1}/>}/>
+
+          <Route
+              path={RoutesList.TAGS}
+              render={() => <App key="Tags" contentFilePath={tags}
                                  gitIssue={1}/>}/>
 
           <Route

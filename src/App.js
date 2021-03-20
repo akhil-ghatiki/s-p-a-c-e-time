@@ -91,7 +91,7 @@ class App extends Component {
                 </MarkdownMembrane>
               </div>
               <p className={classes.commentHeader}>Shoot your comments for this
-                post in<span>
+                post in <span>
               <a href={gitIssueUrl}
                  target="_blank"
                  rel="noopener noreferrer">this link. </a></span>It will

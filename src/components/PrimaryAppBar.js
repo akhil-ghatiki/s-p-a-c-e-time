@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import {createMuiTheme, MuiThemeProvider} from "@material-ui/core";
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -88,10 +89,24 @@ export default function PrimaryAppBar() {
           transformOrigin={{vertical: 'top', horizontal: 'right'}}
           open={isMobileMenuOpen}
           onClose={handleMobileMenuClose}>
-        <MenuItem className={classes.buttons}>
+        <MenuItem className={classes.buttons}
+                  component={Link}
+                  to="/">
+          <Typography>Home</Typography>
+        </MenuItem>
+        <MenuItem className={classes.buttons}
+                  component={Link}
+                  to="/now">
+          <Typography>/now</Typography>
+        </MenuItem>
+        <MenuItem className={classes.buttons}
+                  component={Link}
+                  to="/categories">
           <Typography>Categories</Typography>
         </MenuItem>
-        <MenuItem className={classes.buttons}>
+        <MenuItem className={classes.buttons}
+                  component={Link}
+                  to="/tags">
           <Typography>Tags</Typography>
         </MenuItem>
       </Menu>
@@ -104,23 +119,34 @@ export default function PrimaryAppBar() {
                   style={{boxShadow: 'none'}}>
             <Toolbar>
               <div className={classes.grow}/>
+              <Button className={classes.buttons} style={{marginRight: 90}}
+                      color="inherit"
+                      component={Link}
+                      to="/">
+                <Typography>Home</Typography>
+              </Button>
               <div className={classes.sectionDesktop}>
                 <Button className={classes.buttons} style={{marginRight: 90}}
                         edge="end"
                         aria-label="account of current user"
                         aria-controls={menuId}
                         aria-haspopup="true"
-                        onClick={handleProfileMenuOpen}
                         color="inherit"
+                        component={Link}
+                        to="/now"
                 >
                   <Typography>/now</Typography>
                 </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
-                        color="inherit">
+                        color="inherit"
+                        component={Link}
+                        to="/categories">
                   <Typography>Categories</Typography>
                 </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
-                        color="inherit">
+                        color="inherit"
+                        component={Link}
+                        to="/tags">
                   <Typography>Tags</Typography>
                 </Button>
               </div>
