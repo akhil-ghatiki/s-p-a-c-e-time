@@ -90,11 +90,11 @@ class App extends Component {
                 <MarkdownMembrane markDownFilePath={this.props.contentFilePath}>
                 </MarkdownMembrane>
               </div>
-              <p className={classes.commentHeader}>Try adding a comment
-                in <span>
+              <p className={classes.commentHeader}>Shoot your comments for this
+                post in<span>
               <a href={gitIssueUrl}
                  target="_blank"
-                 rel="noopener noreferrer">this issue</a></span> and it should
+                 rel="noopener noreferrer">this link. </a></span>It will
                 show up
                 in the comments below</p>
               <Typography className={classes.commentHeader}
@@ -120,11 +120,14 @@ class App extends Component {
       return gitIssueBaseUrl.concat(this.props.gitIssue);
     }
   }
+
   getCommentApiUrl() {
     if (this.props.contentFilePath.includes("Keepwaiting")) {
-      return "https://api.github.com/repos/akhil-ghatiki/akhil-ghatiki.github.io/issues/"+this.props.gitIssue+"/comments";
+      return "https://api.github.com/repos/akhil-ghatiki/akhil-ghatiki.github.io/issues/"
+          + this.props.gitIssue + "/comments";
     } else {
-      return "https://api.github.com/repos/akhil-ghatiki/ghpages-blog-comments/issues/"+this.props.gitIssue+"/comments";
+      return "https://api.github.com/repos/akhil-ghatiki/ghpages-blog-comments/issues/"
+          + this.props.gitIssue + "/comments";
     }
   }
 }
