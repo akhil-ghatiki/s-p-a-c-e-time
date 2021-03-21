@@ -94,7 +94,7 @@ class App extends Component {
                 post in <span>
               <a href={gitIssueUrl}
                  target="_blank"
-                 rel="noopener noreferrer">this link. </a></span>It will
+                 rel="noopener noreferrer">this link</a></span>. It will
                 show up
                 in the comments below</p>
               <Typography className={classes.commentHeader}

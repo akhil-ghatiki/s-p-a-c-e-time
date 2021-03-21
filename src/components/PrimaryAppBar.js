@@ -119,13 +119,13 @@ export default function PrimaryAppBar() {
                   style={{boxShadow: 'none'}}>
             <Toolbar>
               <div className={classes.grow}/>
-              <Button className={classes.buttons} style={{marginRight: 90}}
-                      color="inherit"
-                      component={Link}
-                      to="/">
-                <Typography>Home</Typography>
-              </Button>
               <div className={classes.sectionDesktop}>
+                <Button className={classes.buttons} style={{marginRight: 90}}
+                        color="inherit"
+                        component={Link}
+                        to="/">
+                  <Typography>Home</Typography>
+                </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
                         edge="end"
                         aria-label="account of current user"
