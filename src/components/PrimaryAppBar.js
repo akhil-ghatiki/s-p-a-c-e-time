@@ -92,22 +92,22 @@ export default function PrimaryAppBar() {
         <MenuItem className={classes.buttons}
                   component={Link}
                   to="/">
-          <Typography>Home</Typography>
+          <Typography>⌂ Home</Typography>
         </MenuItem>
         <MenuItem className={classes.buttons}
                   component={Link}
                   to="/now">
-          <Typography>/now</Typography>
+          <Typography>⍥ /now</Typography>
         </MenuItem>
         <MenuItem className={classes.buttons}
                   component={Link}
                   to="/categories">
-          <Typography>Categories</Typography>
+          <Typography>≔ Categories</Typography>
         </MenuItem>
         <MenuItem className={classes.buttons}
                   component={Link}
                   to="/tags">
-          <Typography>Tags</Typography>
+          <Typography>〆 Tags</Typography>
         </MenuItem>
       </Menu>
   );
@@ -124,7 +124,7 @@ export default function PrimaryAppBar() {
                         color="inherit"
                         component={Link}
                         to="/">
-                  <Typography>Home</Typography>
+                  <Typography>⌂ Home</Typography>
                 </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
                         edge="end"
@@ -135,19 +135,19 @@ export default function PrimaryAppBar() {
                         component={Link}
                         to="/now"
                 >
-                  <Typography>/now</Typography>
+                  <Typography>⍥ /now</Typography>
                 </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
                         color="inherit"
                         component={Link}
                         to="/categories">
-                  <Typography>Categories</Typography>
+                  <Typography>≔ Categories</Typography>
                 </Button>
                 <Button className={classes.buttons} style={{marginRight: 90}}
                         color="inherit"
                         component={Link}
                         to="/tags">
-                  <Typography>Tags</Typography>
+                  <Typography>〆 Tags</Typography>
                 </Button>
               </div>
               <div className={classes.sectionMobile}>
@@ -158,7 +158,7 @@ export default function PrimaryAppBar() {
                         onClick={handleMobileMenuOpen}
                         color="inherit"
                 >
-                  <Typography>|||</Typography>
+                  <Typography>〚〄〛</Typography>
                 </Button>
               </div>
             </Toolbar>
