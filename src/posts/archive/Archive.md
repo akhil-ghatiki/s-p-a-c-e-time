@@ -1,5 +1,8 @@
 ### 2021
 
+> ###### Jun 02
+ [Touch](https://akhil-ghatiki.github.io/#/touch)
+
  > ###### Feb 28
  [Code smell Katas — Graceful exception handling](https://akhil-ghatiki.github.io/#/code-smell-katas-graceful-exception-handling)
  
