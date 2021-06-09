@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import now from '../posts/app-menu/Now.md';
 import categories from '../posts/app-menu/Categories.md';
 import tags from '../posts/app-menu/Tags.md';
@@ -17,11 +17,13 @@ import stolenFuture3 from '../posts/stolen-future/StolenFuture_3.md';
 import touch from '../posts/touch/touch.md';
 import codeSmellKataGracefulExceptionHandling
   from '../posts/code-smell-katas/code_smell_katas_graceful_exception_handling.md';
-import distributedSystemsPerformanceTesting from '../posts/distributed-systems/performance_testing_distributed_system.md';
+import distributedSystemsPerformanceTesting
+  from '../posts/distributed-systems/performance_testing_distributed_system.md';
 import gitHooksUnsungRescuers from '../posts/git-hooks/git_hooks.md';
-import {HashRouter as Router} from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
+//[import_place_holder]
 
 export const RoutesList = {
   HOME: '/',
@@ -43,120 +45,123 @@ export const RoutesList = {
   DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
   GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers',
   TOUCH: '/touch'
+  //[ROUTE_PLACE_HOLDER]
 }
 
 export default function AppRouter() {
   return (
-      <Router>
-        <Switch>
-          <Route exact
-                 path={RoutesList.HOME}
-                 render={() => <Home key="home"/>}/>
-
-          <Route
-              path={RoutesList.ARCHIVE}
-              render={() => <App key="Archive" contentFilePath={archive}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.NOW}
-              render={() => <App key="Now" contentFilePath={now}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.CATEGORIES}
-              render={() => <App key="Categories" contentFilePath={categories}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.TAGS}
-              render={() => <App key="Tags" contentFilePath={tags}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.KEEP_WAITING}
-              render={() => <App key="keepWaiting" contentFilePath={keepWaiting}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_1}
-              render={() => <App key="silkDestiny1"
-                                 contentFilePath={silkDestiny1}
-                                 gitIssue={1}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_2}
-              render={() => <App key="silkDestiny2"
-                                 contentFilePath={silkDestiny2}
-                                 gitIssue={2}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_3}
-              render={() => <App key="silkDestiny3"
-                                 contentFilePath={silkDestiny3}
-                                 gitIssue={3}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_4}
-              render={() => <App key="silkDestiny4"
-                                 contentFilePath={silkDestiny4}
-                                 gitIssue={4}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_5}
-              render={() => <App key="silkDestiny5"
-                                 contentFilePath={silkDestiny5}
-                                 gitIssue={5}/>}/>
-
-          <Route
-              path={RoutesList.SILK_DESTINY_6}
-              render={() => <App key="silkDestiny6"
-                                 contentFilePath={silkDestiny6}
-                                 gitIssue={6}/>}/>
-
-          <Route
-              path={RoutesList.STOLEN_FUTURE_1}
-              render={() => <App key="stolenFuture1"
-                                 contentFilePath={stolenFuture1}
-                                 gitIssue={7}/>}/>
-
-          <Route
-              path={RoutesList.STOLEN_FUTURE_2}
-              render={() => <App key="stolenFuture2"
-                                 contentFilePath={stolenFuture2}
-                                 gitIssue={8}/>}/>
-
-          <Route
-              path={RoutesList.STOLEN_FUTURE_3}
-              render={() => <App key="stolenFuture3"
-                                 contentFilePath={stolenFuture3}
-                                 gitIssue={9}/>}/>
-
-          <Route
-              path={RoutesList.CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING}
-              render={() => <App key="codeSmellGracefulExceptionHandling"
-                                 contentFilePath={codeSmellKataGracefulExceptionHandling}
-                                 gitIssue={10}/>}/>
-
-          <Route
-              path={RoutesList.DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING}
-              render={() => <App key="distributedSystemPerformanceTesting"
-                                 contentFilePath={distributedSystemsPerformanceTesting}
-                                 gitIssue={11}/>}/>
-
-          <Route
-              path={RoutesList.GIT_HOOKS_UNSUNG_RESCUERS}
-              render={() => <App key="gitHooksUnsungRescuers"
-                                 contentFilePath={gitHooksUnsungRescuers}
-                                 gitIssue={12}/>}/>
+    <Router>
+      <Switch>
+        <Route exact
+          path={RoutesList.HOME}
+          render={() => <Home key="home" />} />
 
         <Route
-              path={RoutesList.TOUCH}
-              render={() => <App key="touch"
-                                 contentFilePath={touch}
-                                 gitIssue={13}/>}/>
+          path={RoutesList.ARCHIVE}
+          render={() => <App key="Archive" contentFilePath={archive}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.NOW}
+          render={() => <App key="Now" contentFilePath={now}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.CATEGORIES}
+          render={() => <App key="Categories" contentFilePath={categories}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.TAGS}
+          render={() => <App key="Tags" contentFilePath={tags}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.KEEP_WAITING}
+          render={() => <App key="keepWaiting" contentFilePath={keepWaiting}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_1}
+          render={() => <App key="silkDestiny1"
+            contentFilePath={silkDestiny1}
+            gitIssue={1} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_2}
+          render={() => <App key="silkDestiny2"
+            contentFilePath={silkDestiny2}
+            gitIssue={2} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_3}
+          render={() => <App key="silkDestiny3"
+            contentFilePath={silkDestiny3}
+            gitIssue={3} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_4}
+          render={() => <App key="silkDestiny4"
+            contentFilePath={silkDestiny4}
+            gitIssue={4} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_5}
+          render={() => <App key="silkDestiny5"
+            contentFilePath={silkDestiny5}
+            gitIssue={5} />} />
+
+        <Route
+          path={RoutesList.SILK_DESTINY_6}
+          render={() => <App key="silkDestiny6"
+            contentFilePath={silkDestiny6}
+            gitIssue={6} />} />
+
+        <Route
+          path={RoutesList.STOLEN_FUTURE_1}
+          render={() => <App key="stolenFuture1"
+            contentFilePath={stolenFuture1}
+            gitIssue={7} />} />
+
+        <Route
+          path={RoutesList.STOLEN_FUTURE_2}
+          render={() => <App key="stolenFuture2"
+            contentFilePath={stolenFuture2}
+            gitIssue={8} />} />
+
+        <Route
+          path={RoutesList.STOLEN_FUTURE_3}
+          render={() => <App key="stolenFuture3"
+            contentFilePath={stolenFuture3}
+            gitIssue={9} />} />
+
+        <Route
+          path={RoutesList.CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING}
+          render={() => <App key="codeSmellGracefulExceptionHandling"
+            contentFilePath={codeSmellKataGracefulExceptionHandling}
+            gitIssue={10} />} />
+
+        <Route
+          path={RoutesList.DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING}
+          render={() => <App key="distributedSystemPerformanceTesting"
+            contentFilePath={distributedSystemsPerformanceTesting}
+            gitIssue={11} />} />
+
+        <Route
+          path={RoutesList.GIT_HOOKS_UNSUNG_RESCUERS}
+          render={() => <App key="gitHooksUnsungRescuers"
+            contentFilePath={gitHooksUnsungRescuers}
+            gitIssue={12} />} />
+
+        <Route
+          path={RoutesList.TOUCH}
+          render={() => <App key="touch"
+            contentFilePath={touch}
+            gitIssue={13} />} />
+
+          {/*ROUTE_RENDER_PLACE_HOLDER*/}
 
         </Switch>
-      </Router>
+    </Router>
   );
 }
