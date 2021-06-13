@@ -44,7 +44,7 @@ export const RoutesList = {
   CODE_SMELL_KATAS_GRACEFUL_EXCEPTION_HANDLING: '/code-smell-katas-graceful-exception-handling',
   DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
   GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers',
-  TOUCH: '/touch'
+  TOUCH: '/touch',
   //[ROUTE_PATH_PLACE_HOLDER]
 }
 
