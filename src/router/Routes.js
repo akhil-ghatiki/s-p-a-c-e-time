@@ -23,7 +23,7 @@ import gitHooksUnsungRescuers from '../posts/git-hooks/git_hooks.md';
 import { HashRouter as Router } from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
-//[import_place_holder]
+//[IMPORT_PLACE_HOLDER]
 
 export const RoutesList = {
   HOME: '/',
@@ -45,7 +45,7 @@ export const RoutesList = {
   DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
   GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers',
   TOUCH: '/touch'
-  //[ROUTE_PLACE_HOLDER]
+  //[ROUTE_PATH_PLACE_HOLDER]
 }
 
 export default function AppRouter() {
