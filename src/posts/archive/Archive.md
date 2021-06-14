@@ -9,6 +9,9 @@
 
 ### 2020
 
+ > ###### Jun 14
+ [One point stop for Installing SonarQube server in an AWS EC2 instance](https://akhil-ghatiki.github.io/#/sonar-aws)
+
  > ###### Jan 12
  [Git hooks — The unsung rescuers](https://akhil-ghatiki.github.io/#/git-hooks-unsung-rescuers)
 
