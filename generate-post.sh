@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# arguments doc
+# arguments reference
 # 1 - folder_name
 # 2 - post_name
-# b=$a:u lower case to upper case
 
 FOLDER_NAME=$1
 FILE_NAME=$2
@@ -31,10 +30,6 @@ mkdir public/images/$FOLDER_NAME
 
 touch src/posts/$FOLDER_NAME/$FILE_NAME.md
 touch public/images/$FOLDER_NAME/$FILE_NAME.jpg
-
-# sed -i '' "s/{\/\*ROUTE_RENDER_PLACE_HOLDER\*\/}/$ROUTE_SUBSTITUTION_STRING/" ./src/router/Routes.js
-# sed -i '' "s/{\/\*ROUTE_RENDER_PLACE_HOLDER\*\/}/$ROUTE_SUBSTITUTION_STRING/" ./src/router/Routes.js
-# sed -i '' "s/{\/\*ROUTE_RENDER_PLACE_HOLDER\*\/}/$ROUTE_SUBSTITUTION_STRING/" ./src/router/Routes.js
 
 sed -i '' "s/\/\/\[IMPORT_PLACE_HOLDER\]/$IMPORT_SUBSTITUTION_STRING/" ./src/router/Routes.js
 sed -i '' "s/\/\/\[ROUTE_PATH_PLACE_HOLDER\]/$ROUTE_PATH_SUBSTITUTION_STRING/" ./src/router/Routes.js
