@@ -31,6 +31,10 @@ mkdir public/images/$FOLDER_NAME
 touch src/posts/$FOLDER_NAME/$FILE_NAME.md
 touch public/images/$FOLDER_NAME/$FILE_NAME.jpg
 
+echo "![image](/images/$FOLDER_NAME/$FILE_NAME.jpg) \n" >> src/posts/$FOLDER_NAME/$FILE_NAME.md
+echo "## [Replace with post header] \n" >> src/posts/$FOLDER_NAME/$FILE_NAME.md
+echo "###### $(date +"%b %d, %Y") \n" >> src/posts/$FOLDER_NAME/$FILE_NAME.md
+
 sed -i '' "s/\/\/\[IMPORT_PLACE_HOLDER\]/$IMPORT_SUBSTITUTION_STRING/" ./src/router/Routes.js
 sed -i '' "s/\/\/\[ROUTE_PATH_PLACE_HOLDER\]/$ROUTE_PATH_SUBSTITUTION_STRING/" ./src/router/Routes.js
 sed -i '' "s/{\/\*ROUTE_RENDER_PLACE_HOLDER\*\/}/$ROUTE_SUBSTITUTION_STRING/" ./src/router/Routes.js
