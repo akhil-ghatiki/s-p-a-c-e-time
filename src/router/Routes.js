@@ -23,6 +23,7 @@ import gitHooksUnsungRescuers from '../posts/git-hooks/git_hooks.md';
 import { HashRouter as Router } from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
+import sonar from '../posts/sonar-qube-aws/sonar-aws.md';
 //[IMPORT_PLACE_HOLDER]
 
 export const RoutesList = {
@@ -45,6 +46,7 @@ export const RoutesList = {
   DISTRIBUTED_SYSTEMS_PERFORMANCE_TESTING: '/debugging-performance-of-distributed-system',
   GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers',
   TOUCH: '/touch',
+  SONAR: '/sonar-aws',
   //[ROUTE_PATH_PLACE_HOLDER]
 }
 
@@ -159,9 +161,10 @@ export default function AppRouter() {
             contentFilePath={touch}
             gitIssue={13} />} />
 
-          {/*ROUTE_RENDER_PLACE_HOLDER*/}
+        <Route path={RoutesList.SONAR} render={() => <App key="sonar-aws" contentFilePath={sonar} gitIssue={14} />} />
+        {/*ROUTE_RENDER_PLACE_HOLDER*/}
 
-        </Switch>
+      </Switch>
     </Router>
   );
 }
