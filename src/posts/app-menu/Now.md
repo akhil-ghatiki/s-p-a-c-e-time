@@ -45,7 +45,7 @@ If I’m doing something that’s not on my list, is it something I want to add,
 
 ## What does my current workstation setup looks like?
 
-- [image](to be pasted)
+![image](/images/now/ws_setup.png)
 
 ## What are few of my talks?
 
