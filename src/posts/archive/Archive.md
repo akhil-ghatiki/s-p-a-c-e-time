@@ -1,5 +1,8 @@
 ### 2021
 
+> ###### August 09
+ [Kubernetes Probes -  Never let your production environment go down during deployment](https://akhil-ghatiki.github.io/#/kubernetes-probes)
+
 > ###### Jun 02
  [Touch](https://akhil-ghatiki.github.io/#/touch)
 

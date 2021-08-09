@@ -24,7 +24,8 @@ import { HashRouter as Router } from 'react-router-dom';
 import App from '../App';
 import Home from '../Home';
 import sonar from '../posts/sonar-qube-aws/sonar-aws.md';
-//[IMPORT_PLACE_HOLDER]
+import kubernetes_probes from '../posts/k8s-probes/kubernetes-probes.md'; 
+ //[IMPORT_PLACE_HOLDER]
 
 export const RoutesList = {
   HOME: '/',
@@ -47,7 +48,8 @@ export const RoutesList = {
   GIT_HOOKS_UNSUNG_RESCUERS: '/git-hooks-unsung-rescuers',
   TOUCH: '/touch',
   SONAR: '/sonar-aws',
-  //[ROUTE_PATH_PLACE_HOLDER]
+  KUBERNETES_PROBES: '/kubernetes-probes', 
+ //[ROUTE_PATH_PLACE_HOLDER]
 }
 
 export default function AppRouter() {
@@ -162,7 +164,8 @@ export default function AppRouter() {
             gitIssue={13} />} />
 
         <Route path={RoutesList.SONAR} render={() => <App key="sonar-aws" contentFilePath={sonar} gitIssue={14} />} />
-        {/*ROUTE_RENDER_PLACE_HOLDER*/}
+        <Route path={RoutesList.KUBERNETES_PROBES} render={() => <App key="kubernetes-probes" contentFilePath={kubernetes_probes} gitIssue={15} />} /> 
+ {/*ROUTE_RENDER_PLACE_HOLDER*/}
 
       </Switch>
     </Router>
