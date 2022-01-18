@@ -1,3 +1,8 @@
+### 2022
+
+> ###### January 15
+ [ RIP, democracy ༼ つ ◕_◕ ༽つ ](https://akhil-ghatiki.github.io/#/rip-democracy)
+
 ### 2021
 
 > ###### August 09
