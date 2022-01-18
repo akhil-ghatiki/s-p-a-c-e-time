@@ -4,6 +4,17 @@
 # 1 - folder_name
 # 2 - post_name
 
+# gh repo view test-gh-cli2323
+
+# if [ $? -eq 1 ]
+# then
+#     echo "Repo dosent exist in your account. Pushing this repo."
+#     gh repo create test-gh-cli2323 --public -y
+#     exit 1
+# else
+#     echo "Your repo is set.."
+# fi
+
 FOLDER_NAME=$1
 FILE_NAME=$2
 FILE_NAME_UPPER_CASE=`echo $FILE_NAME | tr a-z A-Z`
