@@ -49,7 +49,8 @@ If I’m doing something that’s not on my list, is it something I want to add,
 
 ## What are few of my talks?
 
-- How well did you understand Interstellar ? - [click here] (https://drive.google.com/file/d/1qbsOZReYliWNxIyVxn0-BG6TmbDnjFpG/view?usp=sharing) (One of my best talks 😎, don't miss this even for this world 🤪)
+- Navigating the patterns of microservices | Geek night Hyderabad - [click here](https://www.youtube.com/watch?v=fJozuGJjHao)
+- How well did you understand Interstellar ? - [click here](https://drive.google.com/file/d/1qbsOZReYliWNxIyVxn0-BG6TmbDnjFpG/view?usp=sharing) (One of my best talks 😎, don't miss this even for this world 🤪)
 - Contract Testing using Pact | vodQA Chennai 2020 - [click here](https://www.youtube.com/watch?v=bNfhSLc6jF8&t=301s)
 - Designing it the reactive way - [Click here](https://drive.google.com/file/d/1NqjUOA_7l7vUJxJQIxVUELGKOCjUxivd/view?usp=sharing)
 
